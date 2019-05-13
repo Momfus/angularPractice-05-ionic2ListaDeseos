@@ -9,3 +9,15 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+// Agregado después para que no haya lineas blancas en la lista de items
+ion-list {
+
+   background-color: #222428 !important;
+
+}
+
+// Cambiado para que los íconos tenga otro color (inspeccionando el elemento de ion-tab-button esta la clase tab-selected)
+.tab-selected {
+   color: #7044ff !important;
+}
