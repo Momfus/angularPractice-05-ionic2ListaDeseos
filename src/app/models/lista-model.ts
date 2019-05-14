@@ -4,7 +4,7 @@ export class Lista {
    id: number;
    titulo: string;
    creadaEn: Date;
-   terminadaEn: DataCue;
+   terminadaEn: Date;
    terminada: boolean;
 
    items: ListaItem[];

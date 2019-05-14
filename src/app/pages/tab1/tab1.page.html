@@ -13,8 +13,13 @@
     <ion-item *ngFor="let lista of deseosService.listas"
                     detail
                     color="dark"
+                    (click)="listaSeleccionada( lista )"
     >
       <ion-label>{{ lista.titulo}}</ion-label>
+
+      <!-- Mostrar a la derecha de la lista la cantidad de items que tiene -->
+      <ion-note slot="end" color="tertiary">{{ lista.items.length }} Items</ion-note> 
+      
     </ion-item>
     
   </ion-list>
