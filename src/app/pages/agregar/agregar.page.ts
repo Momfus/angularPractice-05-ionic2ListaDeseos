@@ -45,7 +45,6 @@ export class AgregarPage implements OnInit {
 
   cambioCheck( item: ListaItem ) {
 
-    
     const pendientes = this.lista.items
                                       .filter( itemData =>  !itemData.completado ) // Devuelve elementos que sean falsos en completado
                                       .length;
